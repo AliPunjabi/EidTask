@@ -3,28 +3,16 @@
 import 'package:flutter/material.dart';
 import 'package:project1/Customs/button.dart';
 
-class profilescreen extends StatelessWidget {
+class screen10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(width: double.infinity),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: CustomElevatedButton(
-                onPressed: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.person),
-                    Text('User Name', style: TextStyle()),
-                  ],
-                )),
-          ),
           SizedBox(
-            height: 15,
+            width: double.infinity,
+            height: 55,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -33,7 +21,7 @@ class profilescreen extends StatelessWidget {
               child: CustomElevatedButton(
                   // cutom button for signup, you can check it properties from lib/Customs/button.dart
                   onPressed: () {},
-                  child: Text('Info', style: TextStyle())),
+                  child: Text('Health Plans', style: TextStyle())),
             ),
           ),
           SizedBox(
@@ -46,7 +34,7 @@ class profilescreen extends StatelessWidget {
               child: CustomElevatedButton(
                   // cutom button for signup, you can check it properties from lib/Customs/button.dart
                   onPressed: () {},
-                  child: Text('Subscription Plan', style: TextStyle())),
+                  child: Text('One Week Trial', style: TextStyle())),
             ),
           ),
           SizedBox(
@@ -58,7 +46,7 @@ class profilescreen extends StatelessWidget {
               width: double.infinity,
               child: CustomElevatedButton(
                   onPressed: () {},
-                  child: Text('Language',
+                  child: Text('Basic Plan',
                       style: TextStyle(
                           // check lib/Customs/Constants.dart for all colors and fonts used in this app
                           ))),
@@ -73,14 +61,26 @@ class profilescreen extends StatelessWidget {
               width: double.infinity,
               child: CustomElevatedButton(
                   onPressed: () {},
-                  child: Text('Chat with Us',
+                  child: Text('Premium Plan',
                       style: TextStyle(
                           // check lib/Customs/Constants.dart for all colors and fonts used in this app
                           ))),
             ),
           ),
           SizedBox(
-            height: 15,
+            height: 35,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: double.infinity,
+              child: CustomElevatedButton(
+                  onPressed: () {},
+                  child: Text('Help',
+                      style: TextStyle(
+                          // check lib/Customs/Constants.dart for all colors and fonts used in this app
+                          ))),
+            ),
           ),
         ]);
   }

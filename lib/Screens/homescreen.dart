@@ -3,6 +3,7 @@
 // ignore: must_be_immutable
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:project1/Screens/home.dart';
 import 'package:project1/Screens/mealscreen.dart';
 import 'package:project1/Screens/payementscreen.dart';
 import 'package:project1/Screens/profilescreen.dart';
@@ -27,7 +28,7 @@ class _homescreenState extends State<homescreen> {
 
 // these are our screens for bottom navigation bar
   final List<Widget> _children = [
-    mealscreen(),
+    home(),
     mealscreen(),
     profilescreen(),
     payementscreen(),

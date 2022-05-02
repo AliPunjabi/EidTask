@@ -6,54 +6,56 @@ import 'package:project1/Customs/button.dart';
 class screen9 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(width: double.infinity),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SizedBox(
-              width: double.infinity,
-              child: CustomElevatedButton(
-                  // cutom button for signup, you can check it properties from lib/Customs/button.dart
-                  onPressed: () {},
-                  child: Text('Chat with Us', style: TextStyle())),
+    return Scaffold(
+      body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(width: double.infinity),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: CustomElevatedButton(
+                    // cutom button for signup, you can check it properties from lib/Customs/button.dart
+                    onPressed: () {},
+                    child: Text('Chat with Us', style: TextStyle())),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SizedBox(
-              width: double.infinity,
-              child: CustomElevatedButton(
-                  onPressed: () {},
-                  child: Text('Chat with Nutritionist',
-                      style: TextStyle(
-                          // check lib/Customs/Constants.dart for all colors and fonts used in this app
-                          ))),
+            SizedBox(
+              height: 15,
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SizedBox(
-              width: double.infinity,
-              child: CustomElevatedButton(
-                  onPressed: () {},
-                  child: Text('Help',
-                      style: TextStyle(
-                          // check lib/Customs/Constants.dart for all colors and fonts used in this app
-                          ))),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: CustomElevatedButton(
+                    onPressed: () {},
+                    child: Text('Chat with Nutritionist',
+                        style: TextStyle(
+                            // check lib/Customs/Constants.dart for all colors and fonts used in this app
+                            ))),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-        ]);
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: CustomElevatedButton(
+                    onPressed: () {},
+                    child: Text('Help',
+                        style: TextStyle(
+                            // check lib/Customs/Constants.dart for all colors and fonts used in this app
+                            ))),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+          ]),
+    );
   }
 }

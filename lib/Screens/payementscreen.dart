@@ -3,9 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:project1/Customs/button.dart';
 import 'package:project1/Customs/transitions.dart';
-import 'package:project1/Screens/homescreen.dart';
 
-class dashboard extends StatelessWidget {
+class payementscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,17 +25,7 @@ class dashboard extends StatelessWidget {
             ),
             CustomElevatedButton(
                 // cutom button for signup, you can check it properties from lib/Customs/button.dart
-                onPressed: () {
-                  Navigator.of(context).push(
-                    Transitions(
-                        transitionType: TransitionType.fade,
-                        curve: Curves.bounceInOut,
-                        duration: const Duration(milliseconds: 500),
-                        reverseCurve: Curves.bounceOut,
-                        widget: homescreen(
-                            0)), // on tap, it will leads you to pillscreen
-                  );
-                },
+                onPressed: () {},
                 child: Text('Login', style: TextStyle())),
             SizedBox(
               height: 15,
